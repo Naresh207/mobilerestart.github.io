@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Mobile Reboot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .spinner {
+      border: 8px solid #fff;
+      border-top: 8px solid #000;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin: 0 auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+    // This JavaScript could be used to redirect after a delay (for a simulated restart)
+    // For demonstration purposes, it doesn't actually perform a device reboot.
+    // Replace the URL with your desired destination after the "restart."
+    setTimeout(function() {
+      window.location.href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxz1dIwIIdelAER-Agsef7pLYAXDXj4PKLyNNypc8DwBcij-nhZSdA3lVcwLXEdx4hhc&usqp=CAU"; // Redirect after the fake restart
+    }, 10000); // Change the time (in milliseconds) as needed
+  </script>
+</head>
+<body>
+  <h1>Restarting...</h1>
+  <div class="spinner"></div>
+</body>
+</html>
